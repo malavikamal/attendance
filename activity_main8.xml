@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity8"
+    android:background="@color/light">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="338dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_toEndOf="@id/textView26"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:fontFamily="casual"
+        android:text="@string/select_semester"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView26"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20sp"
+        android:fontFamily="casual"
+        android:text="@string/select_class"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15sp"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView26"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/textView27"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView27"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20sp"
+        android:fontFamily="casual"
+        android:text="@string/subject_code"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15sp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textView28"
+        android:autofillHints=""
+        android:hint="@string/subject_code"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView28"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="casual"
+        android:text="@string/take_attendance"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="casual"
+        android:text="@string/view_attendance"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
