@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_reg">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="@string/student_registration"
+        android:textSize="25sp"
+        android:textColor="@color/biege"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#30ffffff"
+            android:text="@string/choose_a_photo"
+            android:textColor="@color/navy"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_toEndOf="@id/choose"
+            android:layout_width="0.5dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choose"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/photo"
+            android:textColor="@color/navy"
+            android:textColorHint="@color/navy"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints=""
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="@string/register_number"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/biege"
+        android:textColorHint="@color/navy"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints=""
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/biege"
+        android:textColorHint="@color/navy"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="#30ffffff"
+        android:entries="@array/gender"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/biege"/>
+
+    <Spinner
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:entries="@array/department"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/biege"/>
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/biege"
+        android:textColorHint="@color/navy"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints=""
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_attach_email_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/biege"
+        android:textColorHint="@color/navy"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:autofillHints=""
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/ic_baseline_key_24"
+        android:drawablePadding="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/biege"
+        android:textColorHint="@color/navy"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/navy"
+        android:textColor="@color/biege"/>
+
+</LinearLayout>
