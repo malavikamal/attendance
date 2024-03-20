@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:background="@color/light">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="@string/student_register"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView8"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="@string/name5"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView8"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/textView9"
+        android:autofillHints=""
+        android:hint="@string/name3"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView9"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/email2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/editTextTextPersonName3"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email3"
+        android:layout_toEndOf="@id/textView10"
+        android:autofillHints=""
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView10"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/admission_number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView11"
+        android:autofillHints=""
+        android:hint="@string/number"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView11"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/department"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="@string/dept"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/editTextTextPersonName5"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView12"
+        android:autofillHints=""
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView12"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/semester"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="@string/sem"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/editTextTextPersonName6"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView12"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView13"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/class1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="@string/class3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/editTextTextPersonName7"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView14"
+        android:autofillHints=""
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView14"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/roll_number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="@string/roll_no"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_below="@id/editTextTextPersonName8"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView15"
+        android:autofillHints=""
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView15"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextNumber"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView16"
+        android:autofillHints=""
+        android:hint="@string/password4"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView16"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="@string/confirm_password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextTextPassword3"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView17"
+        android:autofillHints=""
+        android:hint="@string/confirmpassword"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        android:layout_marginStart="15sp"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPassword4"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="casual"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="290sp"/>
+
+
+</RelativeLayout>
